@@ -6,7 +6,6 @@ import { persistStore } from "redux-persist";
 import { PersistGateway } from "redux-persist/lib/integration/react";
 import { store } from "./store";
 import App from "./App";
-// import { Routes } from "react-router-dom";
 
 const persistor = persistStore(store);
 
