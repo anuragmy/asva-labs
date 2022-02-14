@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { combineReducers, createStore, applyMiddleware } from "redux";
 import { persistReducer } from "redux-persist";
-import Logger from "redux-logger";
+// import Logger from "redux-logger";
 import storage from "redux-persist/lib/storage";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import { composeWithDevTools } from "redux-devtools-extension";
@@ -11,7 +11,7 @@ const reducers = {
   todos,
 };
 
-const middlewares = [Logger];
+const middlewares = [];
 
 const persistConfig = {
   key: "root",
